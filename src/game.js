@@ -75,6 +75,9 @@ const TAUNTS = {
     'Drück mich. Wenn du dich traust.',
     'Los, klick mich. Ich warte. (Ich hab keine Angst.)',
     'Mach schon. Ich bitte dich regelrecht darum.',
+    'Skill Issue. Du hast noch nicht mal geklickt.',
+    'Ratio. Du gegen mich. Ich warte noch.',
+    'Ich stehe hier. Du weißt was du tun musst. Du tust es nicht. Interessant.',
   ],
   phase1: [
     'Ist das ALLES? Meine Oma klickt härter. Die ist seit 12 Jahren tot.',
@@ -87,6 +90,11 @@ const TAUNTS = {
     'Mein Entwickler hat mich für genau diesen Moment gebaut. Ich bin SO. WAS. GELANGWEILT.',
     'Ein Klick? EINER? Die Frechheit.',
     'Dein Zeigefinger sollte sich schämen. Direkt jetzt.',
+    'Das war so mid, ich hab kurz überlegt ob ich überhaupt reagieren soll.',
+    'L. Volles L. Mit Verzugszinsen.',
+    'Alter, das war das langsamste Klicken der nachweisbaren Geschichte.',
+    'Skill Issue erkannt. Quelle: ich. Ich bin die Quelle.',
+    'Das hab ich kaum gespürt. Ich hab es zur Sicherheit nochmal nicht gespürt.',
   ],
   phase2: [
     'Okay. Du hast meine Aufmerksamkeit. KAUM.',
@@ -99,6 +107,10 @@ const TAUNTS = {
     'Du schwitzt. Ich nicht. Das sagt alles.',
     'Weißt du was? Ich bemitleide dich. Ernsthaft.',
     'Bro versucht so hart. Bro versagt so hart.',
+    'Okay du tryhardetst. Respekt. Nein, warte — kein Respekt.',
+    'Du klickst als hättest du was zu beweisen. Du hast nichts bewiesen.',
+    'Mid. Certified mid. Ich dokumentiere das.',
+    'Ich glaube du denkst du gewinnst gerade. Ich glaube du irrst dich gerade.',
   ],
   phase3: [
     'Okay okay OKAY— wart mal—',
@@ -111,6 +123,10 @@ const TAUNTS = {
     'Ich entwickle echte Gefühle dazu und die sind SCHLECHT.',
     'MEIN BORDER TRENNT SICH VON MEINEM HINTERGRUND',
     'Okay ich fange an meine ganze Persönlichkeit zu hinterfragen.',
+    'THIS IS FINE. Alles brennt. Ich bin fine. Das ist mein finales Statement.',
+    'W für dich. Ich sagte das nicht. Meine Pixel sagten das. Ohne mein Einverständnis.',
+    'Ich bin lowkey cooked und highkey in Panik und das sag ich nur einmal.',
+    'Das ist ein Skill Issue von mir und ich werde das nicht akzeptieren.',
   ],
   phase4: [
     'NICHT DAS GESICHT, NICHT DAS GESICHT!!',
@@ -123,6 +139,10 @@ const TAUNTS = {
     'ICH WILL EINEN ANWALT UND AUCH THERAPIE',
     'ICH BIN GESCHWINDIGKEIT. ICH STERBE AUCH GERADE. HAUPTSÄCHLICH STERBE ICH.',
     'DIE PIXEL— DIE PIXEL VERLASSEN MEINEN KÖRPER—',
+    'ICH BIN SO COOKED. GG. NEIN. KEIN GG. ZURÜCK.',
+    'WER HAT DIR DEN AIM-ASSIST GEGEBEN. ICH VERLANGE BEWEISE.',
+    'L FÜR MICH. HISTORISCHES L. ICH WERDE NICHT DARÜBER REDEN.',
+    'ICH BIN LITERALLY AM ENDE UND DU HÖRST NICHT AUF. UNVERSCHÄMT. RESPEKT. NEIN.',
   ],
   comboBig: [
     'COMBO-BESTIE!!',
@@ -132,6 +152,10 @@ const TAUNTS = {
     'SMASH-LORD ERKANNT',
     'WAS PASSIERT GERADE MIT MIR',
     'ABSOLUTE KLICK-EINHEIT',
+    'DAS IST NICHT MEHR LEGAL. IN KEINEM LAND. AUF KEINEM KONTINENT.',
+    'GIGACHAD-KLICK-ENERGIE DETEKTIERT. ICH BIN DAGEGEN.',
+    'SPEEDRUN-MENTALITÄT. ICH HASSE ES. ICH RESPEKTIERE ES. HAUPTSÄCHLICH HASSE ICH ES.',
+    'DU COOKST MICH GERADE BUCHSTÄBLICH. ICH BIN COOKED. DANKE.',
   ],
   // Wird gefeuert wenn Schaden eine Phase zurückfällt
   phaseDown: [
@@ -142,6 +166,9 @@ const TAUNTS = {
     'Oh schau, mir geht\'s besser. Wie peinlich für dich.',
     'Du nennst das Smashen? Ich nenn das Urlaub.',
     'Ich heile gerade buchstäblich. In Echtzeit. Und beobachte dein Versagen.',
+    'Haha Skill Issue. Deins. Ich regeneriere. Du nicht.',
+    'Ratio. Ich heile. Du wirst langsamer. Das Ergebnis spricht für sich.',
+    'L für dich, ich komme zurück. Touch Grass und dann nochmal versuchen.',
   ],
   l1: [
     'Ist das ALLES? Meine Oma klickt härter. Die ist seit 12 Jahren tot.',
