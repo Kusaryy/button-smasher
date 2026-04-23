@@ -454,7 +454,7 @@ body::after {
   position: absolute;
   width: 6px;
   height: 8px;
-  background: #0a0a18;
+  background: rgba(10,10,24,1);
   border-radius: 1px;
   /* Default: centered */
   top: 50%;
