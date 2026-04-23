@@ -424,6 +424,45 @@ body::after {
 #smash-button.broken-final    .crack-5,
 #smash-button[data-sub="3"]  .crack-5 { opacity: 0.8; }
 
+/* ─── BUTTON FACE ─────────────────────────────────────────────────────────── */
+
+.btn-face {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  pointer-events: none;
+  z-index: 3;
+  /* Eyes sit slightly above center */
+  padding-bottom: 12px;
+}
+
+.btn-eye {
+  width: 14px;
+  height: 16px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.92);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(77,150,255,0.6);
+  transition: transform 0.12s ease-out, box-shadow 0.3s;
+}
+
+.btn-pupil {
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  background: #0a0a18;
+  border-radius: 1px;
+  /* Default: centered */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
+}
+
 /* Button text node */
 #button-text {
   position: relative;
