@@ -474,10 +474,32 @@ body::after {
   pointer-events: none;
 }
 
+@keyframes blink {
+  0%, 92%   { transform: scaleY(0.72); }
+  94%        { transform: scaleY(0.08); }
+  96%        { transform: scaleY(0.72); }
+  100%       { transform: scaleY(0.72); }
+}
+
+@keyframes blink-p2 {
+  0%, 92%   { transform: scaleY(1.0); }
+  94%        { transform: scaleY(0.08); }
+  96%        { transform: scaleY(1.0); }
+  100%       { transform: scaleY(1.0); }
+}
+
+@keyframes pupil-twitch {
+  0%, 80%   { transform: translate(-50%, -30%); }
+  82%        { transform: translate(-50%, -15%); }
+  85%        { transform: translate(-50%, -45%); }
+  88%        { transform: translate(-50%, -30%); }
+  100%       { transform: translate(-50%, -30%); }
+}
+
 /* Phase 1 — smug, halbgeschlossen, Pupillen oben */
 #smash-button[data-phase="1"] .btn-eye {
-  transform: scaleY(0.72);
   box-shadow: 0 0 8px rgba(77,150,255,0.7);
+  animation: blink 3.5s ease-in-out infinite;
 }
 #smash-button[data-phase="1"] .btn-pupil {
   transform: translate(-50%, -65%); /* leicht nach oben */
@@ -485,11 +507,11 @@ body::after {
 
 /* Phase 2 — normal, Pupillen nach unten (nervös) */
 #smash-button[data-phase="2"] .btn-eye {
-  transform: scaleY(1.0);
   box-shadow: 0 0 8px rgba(255,217,61,0.7);
+  animation: blink-p2 4.2s ease-in-out infinite;
 }
 #smash-button[data-phase="2"] .btn-pupil {
-  transform: translate(-50%, -30%); /* leicht nach unten */
+  animation: pupil-twitch 4s ease-in-out infinite;
 }
 
 /* Phase 3 — aufgerissen (erschrocken) */
