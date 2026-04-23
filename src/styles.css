@@ -511,6 +511,7 @@ body::after {
   animation: blink-p2 4.2s ease-in-out infinite;
 }
 #smash-button[data-phase="2"] .btn-pupil {
+  transform: translate(-50%, -30%);
   animation: pupil-twitch 4s ease-in-out infinite;
 }
 
