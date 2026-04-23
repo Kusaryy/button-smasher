@@ -527,7 +527,7 @@ body::after {
 
 /* Boss (Level 5) — violetter Glow, leicht breiter */
 #smash-button[data-level="5"] .btn-eye {
-  transform: scaleX(1.1);
+  width: 16px;
   box-shadow: 0 0 10px rgba(155,48,255,0.85);
 }
 
