@@ -226,6 +226,19 @@ body::after {
   transition: box-shadow 0.3s, background 0.4s, border-color 0.3s, transform 0.6s ease-out;
 }
 
+#smash-button:hover {
+  transform: scale(calc(var(--btn-scale) * 1.04));
+}
+
+#smash-button:hover .btn-eye {
+  transform: scaleY(1.2);
+  transition: transform 0.1s ease-out;
+}
+
+#smash-button:hover .btn-pupil {
+  transform: translate(-50%, -75%);
+}
+
 /* Phase 1 – cool blue, smug */
 #smash-button[data-phase="1"] {
   background: radial-gradient(circle at 35% 32%, #3050ff, #060a40);
@@ -565,6 +578,12 @@ body::after {
 #smash-button.broken-final .btn-face {
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+/* Hit — Augen zusammenkneifen während Hit-Animation läuft */
+.button-hit-layer[class*="anim-"] .btn-eye {
+  transform: scaleY(0.1) !important;
+  transition: transform 0.05s;
 }
 
 /* ─── HIT ANIMATIONS (on .button-hit-layer) ──────────────────────────────── */
