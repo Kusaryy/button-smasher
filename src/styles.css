@@ -503,6 +503,7 @@ body::after {
 
 /* Phase 4 — Chaos, Augen flackern */
 #smash-button[data-phase="4"] .btn-eye {
+  transform: scaleY(1.4);
   box-shadow: 0 0 12px rgba(255,32,32,0.95);
   animation: eye-chaos 0.15s steps(2) infinite;
 }
