@@ -1,6 +1,6 @@
 {
   "name": "button-smasher",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "The most aggressive desktop mini-game ever created",
   "main": "main.js",
   "scripts": {
