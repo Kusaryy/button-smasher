@@ -352,8 +352,8 @@ body::after {
 }
 
 @keyframes idle-float {
-  0%, 100% { transform: scale(var(--btn-scale)) translateY(0); }
-  50%       { transform: scale(var(--btn-scale)) translateY(-3px); }
+  0%, 100% { translate: 0 0px; }
+  50%       { translate: 0 -3px; }
 }
 
 #smash-button[data-phase="1"]:not([data-level="5"]) {
@@ -463,7 +463,7 @@ body::after {
   justify-content: center;
   gap: 22px;
   pointer-events: none;
-  z-index: 3;
+  z-index: 1;
   /* Eyes sit slightly above center */
   padding-bottom: 12px;
 }
@@ -647,6 +647,15 @@ body::after {
 .button-hit-layer.anim-hit-c    { animation: hit-c    0.22s ease-out; }
 .button-hit-layer.anim-heated   { animation: hit-heated 0.2s ease-out; }
 .button-hit-layer.anim-rage     { animation: hit-rage   0.17s ease-out; }
+
+@keyframes hit-crush {
+  0%   { transform: scale(1); }
+  12%  { transform: scaleX(1.12) scaleY(0.65); }
+  30%  { transform: scaleX(0.92) scaleY(1.15); }
+  55%  { transform: scaleX(1.03) scaleY(0.97); }
+  100% { transform: scale(1); }
+}
+.button-hit-layer.anim-crush { animation: hit-crush 0.13s ease-out; }
 
 /* ─── SCREEN SHAKE (on #game-screen) ─────────────────────────────────────── */
 
@@ -1208,17 +1217,6 @@ body.game-breaking {
   0%   { transform: translate(-50%,-50%) scale(0); opacity: 1; }
   100% { transform: translate(-50%,-50%) scale(8); opacity: 0; }
 }
-
-/* ─── CRUSH HIT ANIMATION ─────────────────────────────────────────────────── */
-
-@keyframes hit-crush {
-  0%   { transform: scale(1); }
-  12%  { transform: scaleX(1.12) scaleY(0.65); }
-  30%  { transform: scaleX(0.92) scaleY(1.15); }
-  55%  { transform: scaleX(1.03) scaleY(0.97); }
-  100% { transform: scale(1); }
-}
-.button-hit-layer.anim-crush { animation: hit-crush 0.13s ease-out; }
 
 /* ─── VICTORY SCREEN ──────────────────────────────────────────────────────── */
 
