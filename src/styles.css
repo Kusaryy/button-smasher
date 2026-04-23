@@ -459,19 +459,18 @@ body::after {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
   pointer-events: none;
   z-index: 1;
-  /* Eyes sit slightly above center */
-  padding-bottom: 12px;
+  padding-top: 14px;
 }
 
 .btn-eye {
-  width: 14px;
-  height: 16px;
-  border-radius: 2px;
+  width: 20px;
+  height: 24px;
+  border-radius: 3px;
   background: rgba(255,255,255,0.92);
   position: relative;
   overflow: hidden;
@@ -481,8 +480,8 @@ body::after {
 
 .btn-pupil {
   position: absolute;
-  width: 6px;
-  height: 8px;
+  width: 9px;
+  height: 12px;
   background: rgba(10,10,24,1);
   border-radius: 1px;
   /* Default: centered */
@@ -580,7 +579,7 @@ body::after {
 
 /* Boss (Level 5) — violetter Glow, leicht breiter */
 #smash-button[data-level="5"] .btn-eye {
-  width: 16px;
+  width: 22px;
   box-shadow: 0 0 10px rgba(155,48,255,0.85);
 }
 
